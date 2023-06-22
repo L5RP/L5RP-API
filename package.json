@@ -1,0 +1,43 @@
+{
+  "name": "l5rp-api",
+  "version": "1.0.0",
+  "description": "An Framework for server-side C++ and client-side JS development on RageMP",
+  "main": "source/client_resources/index.js",
+  "scripts": {
+    "winpack": "webpack --progress",
+    "linpack": "npx webpack",
+    "linpack-watch": "npx webpack -w",
+    "cmake": "mkdir -p build; mkdir -p bin; cd build; cmake ..; make",
+    "build": "npm run cmake; npm run webpack;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/l5rp/l5rp-api.git"
+  },
+  "author": "L5RP Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/l5rp/l5rp-api/issues"
+  },
+  "homepage": "https://gitlab.com/l5rp/l5rp-#README",
+  "dependencies": {
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "ajv": "^6.3.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^3.10.0",
+    "@types/ragemp-c": "github:cocacolabear/types-ragemp-c#master"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1"
+  }
+}

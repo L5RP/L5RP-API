@@ -1,0 +1,9 @@
+[submodule "bin"]
+	path = bin
+	url = https://gitlab.com/l5rp/l5rp-api-compiled.git
+[submodule "deps"]
+	path = deps
+	url = https://gitlab.com/l5rp/l5rp-deps.git
+[submodule "source"]
+	path = source
+	url = https://gitlab.com/l5rp/l5rp-api-compiled.git
